@@ -35,7 +35,7 @@ This dataset was pulled from Kaggle and contains data collected from 1980 to 201
 -----
 ### Figure 3
 
-**The third figure was created to show the distribution of male horsehair crabs based on latitude and longitude.**
+**The third figure was created to show the distribution of female horsehair crabs based on latitude and longitude.**
 
 <p align="center">
     <img
@@ -64,6 +64,30 @@ This dataset was pulled from Kaggle and contains data collected from 1980 to 201
          src=Resources/Horsehair_crab_cpue_by_year.png
          >
     </p>
+
+-----
+### Example of Code
+**Below shows an example of code for creating Figure 1**
+
+```
+# Create a figure that shows distribution of crabs over the years
+figmap = px.scatter_geo(crab_data_df, lat='latitude', lon='longitude',
+                       color='maturity', size='cpue', hover_name='name',
+                       hover_data=['bottom_depth', 'surface_temperature', 'bottom_temperature'],
+                       animation_frame='year', color_discrete_map={'Total male':'#00bc06', 
+                                                                   'Total female':'#9b00e0'},
+                       width=950, height=650, projection='aitoff')
+
+figmap.update_geos(resolution=50, fitbounds='locations', framecolor='#FFFFFF',
+                  showland=True, landcolor='#226d00',
+                  showocean=True, oceancolor='#000000',
+                  showlakes=True, lakecolor='#005AA8',
+                  showsubunits=True, subunitcolor='#000000')
+
+figmap.update_layout(template='plotly_dark')
+
+figmap.show()
+```
 
 -----
 ## Summary
