@@ -1,4 +1,4 @@
-# Alaskan Horsehair Crab
+# Alaskan Horsehair Crab Analysis
 
 ## Overview
 This dataset was pulled from Kaggle and contains data collected from 1980 to 2018. The image below shows the specific data that was collected.
