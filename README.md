@@ -107,3 +107,10 @@ figmap.show()
 * Shows the drastic decrease after 1980, with an uptick found in 1990 which slowly goes back down until reaching an all time low in 2004. Another uptick occurs in 2010 with the largest CPUE per year since 1980 occuring in 2013 which then decreases. 
      
 **It appears that each uptick in CPUE occurs approximately every decade. This might be due to the generation of young crabs evading large fish netting until they are old enough to be caught and sold. Afterall, small crab isn't as profitable as large crab.**
+
+## Questions
+
+* You can contact me via email or GitHub!
+
+    * Email: emilyporter920@gmail.com
+    * GitHub Profile: Emily Porter || github.com/emilyporter920 
